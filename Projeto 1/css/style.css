@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.center{
+    width: 100%;
+    padding: 0 3%;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #212343;
+}
+
+.logo{
+    margin: 15px;
+}
+
+.conteiner-banner{
+    width: 100%;
+    height: 544px;
+    background:url(../images/header_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.conteiner-banner > .center{
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*aplicando no formulario estilo de sobrepor o header e a sessão de baixo*/
+form{
+    /*margin: 0 30px 0 0;*/
+    padding: 10px;
+    position: relative;
+    top: -15px;
+    width: 400px;
+    height: calc(100% + 30px);
+    border: 8px solid rgba(120, 120, 120, 0.3);
+    float: right;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    text-align: center;
+}
+
+form h2{
+    font-weight: normal;
+    font-size: 21px;
+    color: #999999;
+}
+
+.form-main input[type=text], input[type=email], input[type=tel] {
+    margin-top: 8px;
+    width: 344px;
+    height: 55px;
+    border: 1px solid #ccc;
+}
+
+form p{
+    margin-top: 30px;
+    font-size: 17px;
+    text-align: left;
+    color: #bbbbbb;
+}
+
+input[type=submit]{
+    width: 280px;
+    height: 56px;
+    display: inline-block;
+    cursor: pointer;
+    /*border-bottom: 5px solid #4A5097;*/
+    border: 0;
+    box-shadow: -2px 3px #4A5097;
+    background-color: #393C70;
+    color: #ffffff;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: #323665;
+}
+
+.conteiner-list{
+    padding: 20px;
+    margin-top: 80px;
+    float: left;
+    width: 590px;
+    height: 270px;
+    background-color: rgba(33, 35, 67, 0.7);
+}
+
+.conteiner-list ul{
+    list-style-position: inside;
+}
+
+.conteiner-list ul li{
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+.conteiner-newsletter{
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    background-color: #dddd;
+}
+
+.conteiner-newsletter h2{
+    font-weight: normal;
+}
+
+.conteiner-newsletter p {
+    width: 100%;
+    max-width: 900px;
+    display: inline-block;
+    margin-top:15px;
+    text-align: left;
+}
+
+/*Botar uma imagem entre sessões "position relative top direita esquerda e baixo" */
+/*centralizando no meio a imagenm usando porcentagem e tirando a diferença com margin*/
+.arrow{
+    position: relative;
+    top:60px;
+    left: 50%;
+    margin-left: -20px;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/arrow.png);
+    background-size: 100% 100%;
+}
+
+main{
+    width: 100%;
+}
+
+main h3 {
+    margin: 100px 2%;
+    color: #472663;
+    font-weight: normal;
+    font-size: 30px;
+
+}
+
+main .conteiner-main{
+    padding: 30px 60px; 
+    text-align: center;
+}
+
+.secao-main{
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    margin-right: -4px;
+    padding: 20px;
+}
+
+
+.secao-main h4 {
+    margin: 20px auto;
+}
+
+footer{
+    width: 100%;
+    color: #bbbbbb;
+    border-top: 5px solid #999999;
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+footer p{
+    margin: 20px auto;
+}
+
+@media screen and (max-width: 1080px) {
+        header{
+            width: 100%;
+            height: auto;
+            text-align: center;
+    }
+
+        .logo{
+            margin: 15px 2%;
+    }
+
+        .conteiner-banner{
+            width: 100%;
+            height: auto;
+            padding: 40px 2%;
+            text-align: center;
+    }
+        form{
+            padding: 10px;
+            top: 0;
+            width: 60%;
+            height: 100%;
+            max-width: 400px;
+    }
+        .conteiner-list{
+            margin: 30px 0;
+            width: 40%;
+            max-width: 500px;
+            height: auto;
+            text-align: left;
+    }
+        .form-main input[type=text], input[type=email], input[type=tel] {
+            width: 100%;
+            height: 55px;
+    }
+        input[type=submit]{
+            width: 100%;
+            height: 56px;
+    }
+}
+
+@media screen and (max-width: 768px){
+        form{
+            float: none;
+            display: inline-block;
+            width: 90%;
+            
+    }
+        .conteiner-list{
+            margin: 30px 0;
+            width: 90%;
+            float: none;
+            display: inline-block;
+    }
+}
